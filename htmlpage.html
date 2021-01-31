@@ -24,7 +24,7 @@
                             {{todo.title}}
                             <div v-cloak v-on="hide">
                                 <div v-on:click.stop v-if="show">
-                                    <input type="text" v-model="todo.title" />
+                                    <input type="text" v-model="todo.title"maxlength="100" />
                                 </div>
                                 <button class="button red" v-on:click="todos.splice(index,1)">remove</button>
                             </div>
